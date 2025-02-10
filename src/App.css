@@ -1,0 +1,64 @@
+.h1{
+    color: purple;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+.logout-btn{
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: gainsboro;
+    color: black;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.logout-icon{
+   font-size: 18px;
+}
+
+@media screen and (max-width: 1439px) {
+    .header {
+        padding: 15px;
+    }
+    .logout-btn {
+        width: auto;
+        padding: 8px 12px;
+    }
+}
+
+/* Small Screens (320px - 719px) */
+@media screen and (max-width: 719px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .user-info {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .logout-btn {
+        width: auto;
+        padding: 8px 12px;
+    }
+}
+
